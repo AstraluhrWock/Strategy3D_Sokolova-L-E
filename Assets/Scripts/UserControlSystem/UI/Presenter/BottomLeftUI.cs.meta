@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: fede363363f863749b114fd59e6a0f80
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _selectedImage: {instanceID: 0}
+  - _healthSlider: {instanceID: 0}
+  - _text: {instanceID: 0}
+  - _sliderBackground: {instanceID: 0}
+  - _sliderFillImage: {instanceID: 0}
+  - _selectedValue: {fileID: 11400000, guid: 150d6fc83cb504646bda33cdb6e1147b, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
