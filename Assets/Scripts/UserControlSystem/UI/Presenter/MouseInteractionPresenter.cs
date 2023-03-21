@@ -13,8 +13,6 @@ public class MouseInteractionPresenter : MonoBehaviour
             return;
         }
 
-        //var outline = gameObject.AddComponent<Outline>();
-
         var hits = Physics.RaycastAll(_camera.ScreenPointToRay(Input.mousePosition));
 
         if (hits.Length == 0)
