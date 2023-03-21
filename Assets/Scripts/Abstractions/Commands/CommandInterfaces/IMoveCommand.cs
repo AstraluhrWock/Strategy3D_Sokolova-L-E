@@ -1,7 +1,9 @@
+using UnityEngine;
+
 namespace Abstractions.Commands.CommandsInterfaces
 {
     public interface IMoveCommand : ICommand
     {
-        public void MoveCommand();
+        public Vector3 Target { get; }
     }
 }

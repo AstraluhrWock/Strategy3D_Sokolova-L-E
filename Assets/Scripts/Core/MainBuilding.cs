@@ -2,7 +2,6 @@ using UnityEngine;
 using Abstractions;
 using Abstractions.Commands;
 
-
 public class MainBuilding : CommandExecutorBase<IProduceUnitCommand>, ISelectable
 {
     //[SerializeField] private GameObject _unitPrefab;

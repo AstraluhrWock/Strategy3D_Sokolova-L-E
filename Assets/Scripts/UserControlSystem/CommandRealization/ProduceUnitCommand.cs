@@ -1,6 +1,6 @@
 using UnityEngine;
-using Abstractions.Commands;
 using Utils;
+using Abstractions.Commands;
 
 namespace UserControlSystem.CommandRealization
 {
