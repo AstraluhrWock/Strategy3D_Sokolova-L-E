@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Abstractions;
+using UI.Model;
 public class BottomLeftUI : MonoBehaviour
 {
     [SerializeField] private Image _selectedImage;

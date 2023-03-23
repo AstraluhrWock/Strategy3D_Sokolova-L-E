@@ -1,10 +1,15 @@
 using Abstractions.Commands.CommandsInterfaces;
+using UnityEngine;
+using Utils;
 
 namespace UserControlSystem.CommandRealization
 {
-    public sealed class AttackCommand //: IAttackCommand
+    public sealed class AttackCommand : IAttackCommand
     {
-        public void Attack()
-        { }
+        public GameObject Target { get; set; }
+        public AttackCommand(IAttackable target)
+        {
+            //Target = target;
+        }
     }
 }

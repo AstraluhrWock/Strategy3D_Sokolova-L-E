@@ -32,7 +32,7 @@ namespace UserControlSystem
             _attacker.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(commandExecutor, command));
             _stopper.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(commandExecutor, command));
             _mover.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(commandExecutor, command));
-            _patroller.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(commandExecutor, command));
+            _patroller.ProcessCommandExecutor(commandExecutor, command =>  executeCommandWrapper(commandExecutor, command));
         }
         public void executeCommandWrapper(ICommandExecutor commandExecutor,
         object command)

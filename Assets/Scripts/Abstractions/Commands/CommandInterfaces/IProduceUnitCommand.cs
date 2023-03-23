@@ -1,9 +1,9 @@
-//using UnityEngine;
+using UnityEngine;
 
-//namespace Abstractions.Commands.CommandsInterfaces
-//{
-//    public interface IProduceUnitCommand : ICommand
-//    {
-//        GameObject UnitPrefab { get; }
-//    }
-//}
+namespace Abstractions.Commands.CommandsInterfaces
+{
+    public interface IProduceUnitCommand : ICommand
+    {
+       public GameObject UnitPrefab { get; }
+    }
+}
