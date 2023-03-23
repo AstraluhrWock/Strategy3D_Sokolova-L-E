@@ -1,8 +1,9 @@
 using UnityEngine;
+//using Utils;
 
 namespace Abstractions
 {
-    public interface ISelectable
+    public interface ISelectable //: IHealthHolder
     {
         float Health { get; }
         float MaxHealth { get; }

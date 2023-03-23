@@ -1,6 +1,7 @@
 using System.Linq;
 using UnityEngine;
 using Abstractions;
+using UI.Model;
 
 public class MouseInteractionPresenter : MonoBehaviour
 {

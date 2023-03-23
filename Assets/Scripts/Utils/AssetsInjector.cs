@@ -16,6 +16,7 @@ namespace Utils
             {
                 var fieldInfo = allFiels[i];
                 var injectAssetAttribute = fieldInfo.GetCustomAttributes(_injectAssetAttributeType) as InjectAssetAttribute;
+
                 if (injectAssetAttribute == null)
                 {
                     continue;
