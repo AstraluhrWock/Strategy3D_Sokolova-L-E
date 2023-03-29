@@ -4,7 +4,7 @@ namespace Utils
 {
     public interface IAwaiter<TAwaited> : INotifyCompletion
     {
-        public bool IsCompleted { get; }
-        public TAwaited GetResult();
+       public bool IsCompleted { get; }
+       public TAwaited GetResult();
     }
 }
