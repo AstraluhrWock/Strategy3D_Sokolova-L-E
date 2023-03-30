@@ -17,5 +17,7 @@
 //        Container.Bind<IAwaitable<IAttackable>>().FromInstance(_attackableClicksRMB);
 //        Container.Bind<IAwaitable<Vector3>>().FromInstance(_groundClicksRMB);
 //        Container.BindInstances(_legacyContext, _selectables);
+//        Container.Bind<Sprite>().WithId("Chomper").FromInstance(_chomperSprite);
+//        Container.Bind<IObservable<ISelecatable>>().FromInstance(_selectables);
 //    }
 //}

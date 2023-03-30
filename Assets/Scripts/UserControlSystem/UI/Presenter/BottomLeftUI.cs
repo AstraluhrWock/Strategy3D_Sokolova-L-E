@@ -2,7 +2,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Abstractions;
-using UI.Model;
+using UniRx;
+using Zenject;
+
 public class BottomLeftUI : MonoBehaviour
 {
     [SerializeField] private Image _selectedImage;
@@ -10,11 +12,10 @@ public class BottomLeftUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _text;
     [SerializeField] private Image _sliderBackground;
     [SerializeField] private Image _sliderFillImage;
-    [SerializeField] private SelectableValue _selectedValue;
+   // [Inject] private IObservable<ISelectable> _selectedValue;
     private void Start()
     {
-        _selectedValue.OnSelected += OnSelected;
-        OnSelected(_selectedValue.CurrentValue);
+        //_selectedValue.Subscribe(OnSelected);
     }
     private void OnSelected(ISelectable selected)
     {
