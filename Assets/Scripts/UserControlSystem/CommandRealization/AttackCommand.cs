@@ -6,10 +6,10 @@ namespace UserControlSystem.CommandRealization
 {
     public sealed class AttackCommand : IAttackCommand
     {
-        public GameObject Target { get; set; }
+        public IAttackable Target { get; set; }
         public AttackCommand(IAttackable target)
         {
-            //Target = target;
+            Target = target;
         }
     }
 }
