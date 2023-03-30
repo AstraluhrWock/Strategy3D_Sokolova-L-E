@@ -1,12 +1,20 @@
 using Abstractions.Commands.CommandsInterfaces;
-using UserControlSystem.CommandRealization;
 using Utils;
+using Zenject;
+using System;
 
 namespace UserControlSystem
 {
-    /*public sealed class ProduceCommandCreator : CancellableCommandCreatorBase<IProduceUnitCommand>
+    public sealed class ProduceCommandCreator /*: CancellableCommandCreatorBase<IProduceUnitCommand>
     {
-        protected override IProduceUnitCommand CreateCommand()
-             => ProduceUnitCommand();
-    }*/
+        [Inject] private AssetsContext _context;
+        [Inject] private DiContainer _diContainer;
+        protected override void ClassSpecificCommandCreation(Action<IProduceUnitCommand> creationCallback)
+        {
+            var produceUnitCommand = _context.Inject(new ProduceUnitCommand());
+            _diContainer.Inject(produceUnitCommand);
+            creationCallback?.Invoke(produceUnitCommand);
+        }*/
+    { }
 }
+

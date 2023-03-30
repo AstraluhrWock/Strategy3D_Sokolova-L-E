@@ -3,10 +3,11 @@ using Abstractions;
 using Abstractions.Commands.CommandsInterfaces;
 using Abstractions.Commands;
 
-public class MainBuilding : CommandExecutorBase<IProduceUnitCommand>, ISelectable
+public class MainBuilding : CommandExecutorBase<IProduceUnitCommand>, ISelectable, IHealthHolder
 {
     //[SerializeField] private GameObject _unitPrefab;
     [SerializeField] private Transform _unitsParent;
+    [SerializeField] private Transform _pivot;
 
     private float _health = 1000;
     [SerializeField] private float _maxHealth = 1000;
@@ -15,6 +16,7 @@ public class MainBuilding : CommandExecutorBase<IProduceUnitCommand>, ISelectabl
     public float Health => _health;
     public float MaxHealth => _maxHealth;
     public Sprite Icon => _icon;
+    public Transform PivotPoint => _pivot;
 
 
     
