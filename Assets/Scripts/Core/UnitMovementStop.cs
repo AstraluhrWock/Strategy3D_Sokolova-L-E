@@ -5,6 +5,7 @@ using Utils;
 
 namespace Core
 {
+
     public class UnitMovementStop : MonoBehaviour, IAwaitable<AsyncExtensions.Void>
     {
         public class StopAwaiter : IAwaiter<AsyncExtensions.Void>

@@ -1,7 +1,6 @@
 using UnityEngine;
 using Abstractions;
 using Abstractions.Commands;
-using Abstractions.Commands.CommandExecutors;
 
 public class MainUnit : CommandExecutorBase<ICommand>, ISelectable, IAttackable, IDamageDealer
 {
@@ -13,7 +12,7 @@ public class MainUnit : CommandExecutorBase<ICommand>, ISelectable, IAttackable,
     [SerializeField] private Transform _pivot;
     [SerializeField] private int _damage;
     [SerializeField] private Animator _animator;
-    [SerializeField] private StopCommandExecutor _stopCommand;
+   // [SerializeField] private StopCommandExecutor _stopCommand;
 
     public float Health => _health;
     public float MaxHealth => _maxHealth;

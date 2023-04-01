@@ -8,7 +8,7 @@
 //using Utils;
 //using Abstractions.Commands.CommandExecutors;
 
-//namespace Abstractions.Commands.CommandsInterfaces
+//namespace Abstractions.Commands.CommandExecutors
 //{
 //    public partial class AttackCommandExecutor : CommandExecutorBase<IAttackCommand>
 //    {
